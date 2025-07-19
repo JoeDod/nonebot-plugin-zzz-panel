@@ -1,0 +1,434 @@
+{
+  "retcode": 0,
+  "message": "OK",
+  "data": {
+    "avatar_icon": {
+      "1071": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1071.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1071.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1071.png",
+        "vertical_painting_color": "#da8837",
+        "avatar_us_full_name": "Caesar King",
+        "teaser_avatar": ""
+      },
+      "1111": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1111.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1111.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1111.png",
+        "vertical_painting_color": "#ddc374",
+        "avatar_us_full_name": "Anton Ivanov",
+        "teaser_avatar": ""
+      },
+      "1241": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1241.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1241.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1241.png",
+        "vertical_painting_color": "#4e7ebd",
+        "avatar_us_full_name": "Zhu Yuan",
+        "teaser_avatar": ""
+      },
+      "1221": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1221.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1221.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1221.png",
+        "vertical_painting_color": "#d55b68",
+        "avatar_us_full_name": "Tsukishiro Yanagi",
+        "teaser_avatar": ""
+      },
+      "1421": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1421.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1421.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1421.png",
+        "vertical_painting_color": "#c84342",
+        "avatar_us_full_name": "Pan Yinhu",
+        "teaser_avatar": ""
+      },
+      "1361": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1361.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1361.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1361.png",
+        "vertical_painting_color": "#FFD632",
+        "avatar_us_full_name": "Trigger",
+        "teaser_avatar": ""
+      },
+      "1161": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1161.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1161.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1161.png",
+        "vertical_painting_color": "#be3b2b",
+        "avatar_us_full_name": "Lighter",
+        "teaser_avatar": ""
+      },
+      "1371": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1371.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1371.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1371.png",
+        "vertical_painting_color": "#b7986f",
+        "avatar_us_full_name": "Yixuan",
+        "teaser_avatar": ""
+      },
+      "1121": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1121.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1121.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1121.png",
+        "vertical_painting_color": "#a68d73",
+        "avatar_us_full_name": "Ben Bigger",
+        "teaser_avatar": ""
+      },
+      "1321": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1321.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1321.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1321.png",
+        "vertical_painting_color": "#9D5EF1",
+        "avatar_us_full_name": "Evelyn Chevalier",
+        "teaser_avatar": ""
+      },
+      "1291": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1291.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1291.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1291.png",
+        "vertical_painting_color": "#EECC7B",
+        "avatar_us_full_name": "Hugo Vlad",
+        "teaser_avatar": ""
+      },
+      "1281": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1281.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1281.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1281.png",
+        "vertical_painting_color": "#e9d892",
+        "avatar_us_full_name": "Piper Wheel",
+        "teaser_avatar": ""
+      },
+      "1211": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1211.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1211.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1211.png",
+        "vertical_painting_color": "#c4c1b1",
+        "avatar_us_full_name": "Alexandrina Sebastiane",
+        "teaser_avatar": ""
+      },
+      "1131": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1131.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1131.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1131.png",
+        "vertical_painting_color": "#28bdcc",
+        "avatar_us_full_name": "Soukaku",
+        "teaser_avatar": ""
+      },
+      "1091": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1091.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1091.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1091.png",
+        "vertical_painting_color": "#05777a",
+        "avatar_us_full_name": "Hoshimi Miyabi",
+        "teaser_avatar": ""
+      },
+      "1381": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1381.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1381.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1381.png",
+        "vertical_painting_color": "#F7940A",
+        "avatar_us_full_name": "Soldier 0 - Anby",
+        "teaser_avatar": ""
+      },
+      "1311": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1311.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1311.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1311.png",
+        "vertical_painting_color": "#D12D4E",
+        "avatar_us_full_name": "Astra Yao",
+        "teaser_avatar": ""
+      },
+      "1171": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1171.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1171.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1171.png",
+        "vertical_painting_color": "#da8837",
+        "avatar_us_full_name": "Burnice White",
+        "teaser_avatar": ""
+      },
+      "1041": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1041.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1041.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1041.png",
+        "vertical_painting_color": "#febb2e",
+        "avatar_us_full_name": "Soldier 11",
+        "teaser_avatar": ""
+      },
+      "1101": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1101.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1101.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1101.png",
+        "vertical_painting_color": "#de643d",
+        "avatar_us_full_name": "Koleda Belobog",
+        "teaser_avatar": ""
+      },
+      "1181": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1181.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1181.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1181.png",
+        "vertical_painting_color": "#b75339",
+        "avatar_us_full_name": "Grace Howard",
+        "teaser_avatar": ""
+      },
+      "1061": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1061.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1061.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1061.png",
+        "vertical_painting_color": "#c8d7bd",
+        "avatar_us_full_name": "Corin Wickes",
+        "teaser_avatar": ""
+      },
+      "1391": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1391.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1391.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1391.png",
+        "vertical_painting_color": "#e29737",
+        "avatar_us_full_name": "Ju Fufu",
+        "teaser_avatar": ""
+      },
+      "1271": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1271.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1271.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1271.png",
+        "vertical_painting_color": "#136dd5",
+        "avatar_us_full_name": "Seth Lowell",
+        "teaser_avatar": ""
+      },
+      "1031": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1031.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1031.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1031.png",
+        "vertical_painting_color": "#e6adaa",
+        "avatar_us_full_name": "Nicole Demara",
+        "teaser_avatar": ""
+      },
+      "1201": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1201.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1201.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1201.png",
+        "vertical_painting_color": "#e1c600",
+        "avatar_us_full_name": "Asaba Harumasa",
+        "teaser_avatar": ""
+      },
+      "1411": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1411.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1411.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1411.png",
+        "vertical_painting_color": "#b92734",
+        "avatar_us_full_name": "Ukinami Yuzuha",
+        "teaser_avatar": ""
+      },
+      "1021": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1021.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1021.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1021.png",
+        "vertical_painting_color": "#a0351c",
+        "avatar_us_full_name": "Nekomiya Mana",
+        "teaser_avatar": ""
+      },
+      "1331": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1331.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1331.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1331.png",
+        "vertical_painting_color": "#C77DFB",
+        "avatar_us_full_name": "Vivian Banshee",
+        "teaser_avatar": ""
+      },
+      "1081": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1081.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1081.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1081.png",
+        "vertical_painting_color": "#af3e3a",
+        "avatar_us_full_name": "Billy Kid",
+        "teaser_avatar": ""
+      },
+      "1141": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1141.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1141.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1141.png",
+        "vertical_painting_color": "#d0d3e0",
+        "avatar_us_full_name": "Von Lycaon",
+        "teaser_avatar": ""
+      },
+      "1191": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1191.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1191.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1191.png",
+        "vertical_painting_color": "#c9becc",
+        "avatar_us_full_name": "Ellen Joe",
+        "teaser_avatar": ""
+      },
+      "1011": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1011.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1011.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1011.png",
+        "vertical_painting_color": "#c8e16c",
+        "avatar_us_full_name": "Anby Demara",
+        "teaser_avatar": ""
+      },
+      "1261": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1261.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1261.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1261.png",
+        "vertical_painting_color": "#86d4e8",
+        "avatar_us_full_name": "Jane Doe",
+        "teaser_avatar": ""
+      },
+      "1251": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1251.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1251.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1251.png",
+        "vertical_painting_color": "#28c79d",
+        "avatar_us_full_name": "Qingyi",
+        "teaser_avatar": ""
+      },
+      "1151": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1151.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1151.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1151.png",
+        "vertical_painting_color": "#e8cda2",
+        "avatar_us_full_name": "Luciana de Montefio",
+        "teaser_avatar": ""
+      },
+      "1351": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1351.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_square_avatar/role_square_avatar_1351.png",
+        "vertical_painting": "https://act-webstatic.mihoyo.com/game_record/zzzv2/role_vertical_painting/role_vertical_painting_1351.png",
+        "vertical_painting_color": "#EB721B",
+        "avatar_us_full_name": "Pulchra Fellini",
+        "teaser_avatar": ""
+      }
+    },
+    "buddy_icon": {
+      "53002": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/5ce7c1f58b2514be013543ebfb71c368.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/5ce7c1f58b2514be013543ebfb71c368.png"
+      },
+      "53013": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/011ee86e5c1c7e326e820135ce5cf888.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/011ee86e5c1c7e326e820135ce5cf888.png"
+      },
+      "53017": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/501563eab7077e2064963f71ef0e1933.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/501563eab7077e2064963f71ef0e1933.png"
+      },
+      "54005": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/b3278fbd651ca233977282466edecc5e.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/b3278fbd651ca233977282466edecc5e.png"
+      },
+      "54018": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/4430f37c68a824c81793fa182ebea4af.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/4430f37c68a824c81793fa182ebea4af.png"
+      },
+      "54004": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/73d2a214665652030cfc9550c4350bfb.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/73d2a214665652030cfc9550c4350bfb.png"
+      },
+      "54006": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/e99c63a021ac37cef7dc1f16a274e282.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/e99c63a021ac37cef7dc1f16a274e282.png"
+      },
+      "54002": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/250e8b9f3b69a157aab7591f7339f14d.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/250e8b9f3b69a157aab7591f7339f14d.png"
+      },
+      "54001": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/bbe6bda740bffaabc4ccd5d4faeccfd4.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/bbe6bda740bffaabc4ccd5d4faeccfd4.png"
+      },
+      "53015": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/a3d5cc7fbc22e08db8fa1d805dbf945e.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/a3d5cc7fbc22e08db8fa1d805dbf945e.png"
+      },
+      "54017": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/673af592988c4b910c393564c7a03b9a.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/673af592988c4b910c393564c7a03b9a.png"
+      },
+      "54008": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/860cb6876896c9a92139697b0cba8584.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/860cb6876896c9a92139697b0cba8584.png"
+      },
+      "53006": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/82a77c12bb7400104250ff19018fa1d5.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/82a77c12bb7400104250ff19018fa1d5.png"
+      },
+      "54009": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/0e2e8fd9c0c28229a2282b3dc07ecd79.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/0e2e8fd9c0c28229a2282b3dc07ecd79.png"
+      },
+      "54003": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/29a9f081636ba3e1325e5fafc6a06e83.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/29a9f081636ba3e1325e5fafc6a06e83.png"
+      },
+      "53001": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/5a7e74314d2378925a592b2316b98263.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/5a7e74314d2378925a592b2316b98263.png"
+      },
+      "54012": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/470987f4b6ab653a1d51011776130480.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/470987f4b6ab653a1d51011776130480.png"
+      },
+      "53003": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/1271ab9b2cde263791f38380ce7ffa2a.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/1271ab9b2cde263791f38380ce7ffa2a.png"
+      },
+      "53008": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/1c067c1b44241804144f5a8ada36d91f.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/1c067c1b44241804144f5a8ada36d91f.png"
+      },
+      "54011": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/ac0d1dd6aa79722d5d534456ec664420.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/ac0d1dd6aa79722d5d534456ec664420.png"
+      },
+      "53004": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/fbec9790198cde0156f12b8a77b61cd1.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/fbec9790198cde0156f12b8a77b61cd1.png"
+      },
+      "53010": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/26135b513ea512c556f832b93728694c.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/26135b513ea512c556f832b93728694c.png"
+      },
+      "53005": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/7aae528a6812f474150ec02867e31a8a.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/7aae528a6812f474150ec02867e31a8a.png"
+      },
+      "54013": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/0736c81f3cd55ebff39fa464cb97ab80.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/0736c81f3cd55ebff39fa464cb97ab80.png"
+      },
+      "53012": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/5ee48717f0097b8f5372d147105ac549.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/5ee48717f0097b8f5372d147105ac549.png"
+      },
+      "53009": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/655cdc77bc5abc2e8d9ac86edaf97478.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/655cdc77bc5abc2e8d9ac86edaf97478.png"
+      },
+      "54015": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/0770fe69d4e63ea2d5643fa1484e3f06.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/0770fe69d4e63ea2d5643fa1484e3f06.png"
+      },
+      "54014": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/4597c9f0a38116e1c3ba13292bcef201.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/4597c9f0a38116e1c3ba13292bcef201.png"
+      },
+      "53014": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/fab626cbc5f2f7b28776f25b408347b2.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/fab626cbc5f2f7b28776f25b408347b2.png"
+      },
+      "54016": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/a9e9171cb80c0d134e5866377ec878ee.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/a9e9171cb80c0d134e5866377ec878ee.png"
+      },
+      "53007": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/877dba7635069cf1d5028bebb74db87c.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/877dba7635069cf1d5028bebb74db87c.png"
+      },
+      "53011": {
+        "square_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/cc1f13a3217d91753799b959b4b6d7e6.png",
+        "rectangle_avatar": "https://act-webstatic.mihoyo.com/darkmatter/nap/prod_gf_cn/item_icon_ud1fhc/cc1f13a3217d91753799b959b4b6d7e6.png"
+      }
+    }
+  }
+}
