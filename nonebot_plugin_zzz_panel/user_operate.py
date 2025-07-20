@@ -77,13 +77,16 @@ async def login_with_cache(
             save_json_file(cookies, cookies_path)
         finally:
             lock.release()
-        for _ in range(50):
-            await page.locator(
-                "div:nth-child(3) > .gt-icon > .gt-icon__img > use"
-            ).first.click()
-            await page.wait_for_timeout(100)
-        await browser.close()
-        return True
+        try:
+            for _ in range(50):
+                await page.locator(
+                    "div:nth-child(3) > .gt-icon > .gt-icon__img > use"
+                ).first.click()
+                await page.wait_for_timeout(100)
+            await browser.close()
+            return True
+        except Exception:
+            return False
 
 
 async def get_avatar_list(user_id) -> str:
@@ -112,16 +115,16 @@ async def get_avatar_list(user_id) -> str:
     ])
 
 
-async def update_user_data(user_id, on_qr_code) -> bool:
-    if not await login_with_cache(user_id, on_qr_code,
-                                  create_response_handler):
-        return False
+async def update_user_data(user_id, on_qr_code, login=True) -> bool:
+    if login:
+        if not await login_with_cache(user_id, on_qr_code,
+                                      create_response_handler):
+            return False
+
     try:
-        # 加载用户数据
+
         user_dir = plugin_dir / "data" / user_id
         user_info = load_json_file(user_dir / "user_info.json")
-
-        # 获取已解锁角色列表
         basic_list = load_json_file(user_dir / "avatar_basic_list.json").get(
             "data", {}).get("list", [])
         unlocked_avatars_list = [
@@ -136,35 +139,32 @@ async def update_user_data(user_id, on_qr_code) -> bool:
             str(item["avatar"]["id"]): item
             for item in avatar_detail_list
         }
-
-        async def process_avatar(avatar_id):
+        html_template = plugin_dir / "template" / "avatar_panel.html"
+        output_html_list = []
+        with html_template.open("r", encoding="utf-8") as f:
+            template_content = f.read()
+        for avatar_id in unlocked_avatars_list:
             avatar = avatar_map.get(avatar_id, {})
-
-            # 补充角色数据
             avatar["uid"] = user_info.get("data", {}).get("user",
                                                           {}).get("uid", "")
             avatar["vertical_painting"] = icon_info.get("data", {}).get(
                 "avatar_icon", {}).get(avatar_id,
                                        {}).get("vertical_painting", "")
 
-            # 处理角色图片
             await process_avatar_images(avatar)
 
-            # 渲染HTML和图片
-            html_template = plugin_dir / "template" / "avatar_panel.html"
             output_html = user_dir / "images" / f"{avatar_id}.html"
 
-            with html_template.open("r", encoding="utf-8") as f:
-                render_html(avatar, f.read(), output_html)
+            render_html(avatar, template_content, output_html)
+            output_html_list.append(output_html)
 
-            await html_render_image(output_html, "#container")
-            remove(output_html)
-
-        await asyncio.gather(
-            *
-            [process_avatar(avatar_id) for avatar_id in unlocked_avatars_list])
-    except Exception:
+        await html_render_image(output_html_list, "#container")
+        for html_path in output_html_list:
+            remove(html_path)
+    except Exception as e:
+        print(f"更新用户数据时出错: {e}")
         return False
+
     return True
 
 
@@ -189,13 +189,22 @@ def create_response_handler(user_id):
             await file_lock.acquire()
             try:
                 data = load_json_file(file_path)
+                data_list_map = {
+                    avatar["avatar"]["id"]: avatar
+                    for avatar in data.get("data", {}).get("list", [])
+                }
                 resp = await response.json()
-
-                if data != {}:
-                    st = set([i["avatar"]["id"] for i in data["data"]["list"]])
-                    for i in resp["data"]["list"]:
-                        if i["avatar"]["id"] not in st:
-                            data["data"]["list"].append(i)
+                resp_data_list = resp.get("data", {}).get("list", [])
+                new_data_list = {
+                    avatar["avatar"]["id"]: avatar
+                    for avatar in resp_data_list
+                }
+                if data_list_map:
+                    for id, avatar in new_data_list.items():
+                        data_list_map[id] = avatar
+                    data["data"]["list"] = [
+                        v for _, v in data_list_map.items()
+                    ]
                     save_json_file(data, file_path)
                 else:
                     save_json_file(resp, file_path)

@@ -14,18 +14,18 @@
             <div class="grid-row-1-1">
                 <div class="avatar-overlay"></div>
                 <span class="icon rarity-icon" style="top: 15px;">
-                    <img src="../../images/avatar-rarity/{{ avatar.rarity }}.png" alt="">
+                    <img src="../../../images/avatar-rarity/{{ avatar.rarity }}.png" alt="">
                 </span>
                 <span class="icon profession-icon" style="top: 80px;">
-                    <img src="../../images/avatar_profession/{{ avatar.avatar_profession }}.png" alt="">
+                    <img src="../../../images/avatar_profession/{{ avatar.avatar_profession }}.png" alt="">
                 </span>
                 <span class="icon element-icon" style="top: 145px;">
                     {% if avatar.id==1091 %}
-                    <img src="../../images/element_type/1091.png" alt="雅">
+                    <img src="../../../images/element_type/1091.png" alt="雅">
                     {% elif avatar.id==1371 %}
-                    <img src="../../images/element_type/1371.png" alt="仪玄">
+                    <img src="../../../images/element_type/1371.png" alt="仪玄">
                     {% else %}
-                    <img src="../../images/element_type/{{avatar.element_type }}.png" alt="其他">
+                    <img src="../../../images/element_type/{{avatar.element_type }}.png" alt="其他">
                     {% endif %}
                 </span>
                 <span class="avatar-rank">{{ avatar.rank }}</span>
@@ -47,7 +47,7 @@
                 <div class="grid-row-2-1-1">
                     <!-- 阵营图标 -->
                     <div class="group-icon-wrapper">
-                        <img src="../../images/group_icon_path/{{ avatar.group_icon_path }}" alt="">
+                        <img src="../../../images/group_icon_path/{{ avatar.group_icon_path }}" alt="">
                     </div>
                 </div>
                 <div class="grid-row-2-1-2">
@@ -61,7 +61,7 @@
             <div class="grid-row-2-2">
                 <div class="skill-block">
                     <div class="skill-icon">
-                        <img src="../../images/skills/普通攻击.png" alt="" />
+                        <img src="../../../images/skills/普通攻击.png" alt="" />
                     </div>
                     <span class="skill-label">
                         普攻
@@ -74,7 +74,7 @@
                 </div>
                 <div class="skill-block">
                     <div class="skill-icon">
-                        <img src="../../images/skills/闪避.png" alt="" />
+                        <img src="../../../images/skills/闪避.png" alt="" />
                     </div>
                     <span class="skill-label">
                         闪避
@@ -87,7 +87,7 @@
                 </div>
                 <div class="skill-block">
                     <div class="skill-icon">
-                        <img src="../../images/skills/支援技.png" alt="" />
+                        <img src="../../../images/skills/支援技.png" alt="" />
                     </div>
                     <span class="skill-label">
                         支援
@@ -100,7 +100,7 @@
                 </div>
                 <div class="skill-block">
                     <div class="skill-icon">
-                        <img src="../../images/skills/强化e.png" alt="" />
+                        <img src="../../../images/skills/强化e.png" alt="" />
                     </div>
                     <span class="skill-label">
                         战技
@@ -113,7 +113,7 @@
                 </div>
                 <div class="skill-block">
                     <div class="skill-icon">
-                        <img src="../../images/skills/终结技.png" alt="" />
+                        <img src="../../../images/skills/终结技.png" alt="" />
                     </div>
                     <span class="skill-label">
                         终结
@@ -126,7 +126,7 @@
                 </div>
                 <div class="skill-block">
                     <div class="skill-icon">
-                        <img src="../../images/skills/核心技.png" alt="" />
+                        <img src="../../../images/skills/核心技.png" alt="" />
                     </div>
                     <span class="skill-label">
                         核心
@@ -188,15 +188,15 @@
                 <div class="equip-item-1">
                     <span class="equip-name">{{equip.name}}</span>
                     <span class="equip-icon">
-                        <img src="../../images/equip-icon/{{ equip.icon }}" />
+                        <img src="../../../images/equip-icon/{{ equip.icon }}" />
                     </span>
                     <span class="equip-rank-icon">
                         {% if equip.rarity=="S" %}
-                        <img src="../../images/equipment-icon/S.png" />
+                        <img src="../../../images/equipment-icon/S.png" />
                         {% elif equip.rarity=="A" %}
-                        <img src="../../images/equipment-icon/A.png" />
+                        <img src="../../../images/equipment-icon/A.png" />
                         {% elif equip.rarity=="B" %}
-                        <img src="../../images/equipment-icon/B.png" />
+                        <img src="../../../images/equipment-icon/B.png" />
                         {% endif %}
                     </span>
                     <span class="equip-level">Lv{{equip.level}}</span>
@@ -232,7 +232,7 @@
             font-style: normal;
             font-weight: 400;
             font-display: swap;
-            src: url(../../font.woff2) format('woff2');
+            src: url(../../../font.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
 
@@ -242,7 +242,7 @@
             font-style: normal;
             font-weight: 700;
             font-display: swap;
-            src: url(../../font.woff2) format('woff2');
+            src: url(../../../font.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
 
@@ -252,7 +252,7 @@
             font-style: normal;
             font-weight: 900;
             font-display: swap;
-            src: url(../../font.woff2) format('woff2');
+            src: url(../../../font.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
 
@@ -309,7 +309,7 @@
         .grid-row-1-1 {
             background-size: cover;
             background-position: center;
-            background-image: url('../../images/vertical_painting/{{ vertical_painting }}');
+            background-image: url('../../../images/vertical_painting/{{ vertical_painting }}');
             background-repeat: no-repeat;
             border-radius: 15px;
             position: relative;

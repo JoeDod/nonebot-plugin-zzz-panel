@@ -2,7 +2,7 @@ import json
 from jinja2 import Template
 import httpx
 from pathlib import Path
-from typing import Dict, Union, Any
+from typing import Dict, Union, Any, List
 from .config import plugin_dir
 from playwright.async_api import async_playwright
 
@@ -28,6 +28,7 @@ def save_json_file(data: Any, file_path: Union[str, Path]) -> None:
     file_path.parent.mkdir(parents=True, exist_ok=True)
     try:
         with file_path.open("w", encoding="utf-8") as f:
+            print("重写文件:", file_path)
             json.dump(data, f, ensure_ascii=False, indent=2)
     except Exception as e:
         raise RuntimeError(f"保存文件失败: {e}")
@@ -122,20 +123,29 @@ def render_html(data, template_html: str, save_directory: Path):
         file.write(template.render(**data))
 
 
-async def html_render_image(html_path: Path, tag_id=None) -> Path:
-    image_path = html_path.parent / f"{html_path.name.split('.')[0]}.png"
+async def html_render_image(html_paths: List[Path], tag_id=None) -> List[Path]:
+    results = []
+
     try:
         async with async_playwright() as p:
             browser = await p.chromium.launch()
-            page = await browser.new_page()
-            await page.goto(f"file://{html_path.absolute()}")
-            if tag_id:
-                await page.locator("#container").screenshot(path=image_path)
-            else:
-                await page.screenshot(path=image_path)
-        return image_path
-    finally:
-        await browser.close()
+            async with await browser.new_page() as page:
+                for html_path in html_paths:
+                    html_path = Path(html_path)
+
+                    image_path = html_path.parent / f"{html_path.stem}.png"
+                    await page.goto(f"file://{html_path.absolute()}")
+                    if tag_id:
+                        await page.wait_for_timeout(500)
+                        await page.locator(f"{tag_id}").screenshot(
+                            path=image_path)
+                    else:
+                        await page.wait_for_timeout(500)
+                        await page.screenshot(path=image_path)
+                    results.append(image_path)
+                return results
+    except Exception:
+        return []
 
 
 def find_avatar_id(avatar_name: str, data: Dict) -> str:

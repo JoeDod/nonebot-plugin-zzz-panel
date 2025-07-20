@@ -31,10 +31,6 @@ async def _():
     await menu.finish(menu_text)
 
 
-async def qr_code(qr_src):
-    await user_bind.send(MessageSegment.image(qr_src), at_sender=True)
-
-
 @avatar_list.handle()
 async def _(event: MessageEvent):
     user_id = event.get_user_id()
@@ -44,10 +40,15 @@ async def _(event: MessageEvent):
 @user_bind.handle()
 async def _(event: MessageEvent):
     user_id = event.get_user_id()
-    if await login_with_cache(user_id, qr_code,
-                              create_response_handler) == False:
+    if await login_with_cache(
+            user_id, lambda qr_src: update_avatar_panel.send(
+                MessageSegment.image(qr_src), at_sender=True),
+            create_response_handler) == False:
         await user_bind.finish("绑定失败!")
-    await update_user_data(user_id, qr_code)
+    await update_user_data(user_id,
+                           lambda qr_src: update_avatar_panel.send(
+                               MessageSegment.image(qr_src), at_sender=True),
+                           login=False)
     await user_bind.finish("绑定成功!")
 
 
@@ -55,7 +56,9 @@ async def _(event: MessageEvent):
 async def _(event: MessageEvent):
     await update_avatar_panel.send("正在更新面板,请等待...", at_sender=True)
     user_id = event.get_user_id()
-    if await update_user_data(user_id, qr_code):
+    if await update_user_data(
+            user_id, lambda qr_src: update_avatar_panel.send(
+                MessageSegment.image(qr_src), at_sender=True)):
         await update_avatar_panel.finish("更新面板成功!", at_sender=True)
     await update_avatar_panel.finish("更新面板失败!", at_sender=True)
 
@@ -78,7 +81,7 @@ async def _(event: MessageEvent, msg: Message = CommandArg()):
         if avatar_id == "-1":
             await avatar_panel.finish("代理人名称错误", at_sender=True)
 
-        avatar_panel_image = plugin_dir / "data" / user_id / f"{avatar_id}.png"
+        avatar_panel_image = plugin_dir / "data" / user_id / "images" / f"{avatar_id}.png"
         if not avatar_panel_image.exists():
             await avatar_panel.finish("代理人面板不存在,请更新面板!", at_sender=True)
         with avatar_panel_image.open("rb") as f:
