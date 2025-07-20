@@ -6,6 +6,16 @@ from .user_operate import login_with_cache, create_response_handler, remove_user
 from .utils import find_avatar_id
 import base64
 from .common import avatar_id_name, get_id_lock, safe_cleanup_lock
+from nonebot.plugin import PluginMetadata
+
+__plugin_meta__ = PluginMetadata(
+    name="绝区零面板查看",
+    description="通过发送指令查询角色面板",
+    usage="面板 雅",
+    type="application",
+    homepage="https://github.com/JoeDod/nonebot-plugin-zzz-panel.git",
+    supported_adapters=None,
+)
 
 menu = on_command("菜单")
 user_bind = on_command("绑定", priority=10, block=True)

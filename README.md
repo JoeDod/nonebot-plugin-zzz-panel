@@ -29,27 +29,13 @@
 - Python 3.8+
 - NoneBot2 2.0+
 - Playwright
-- 其他依赖见 `requirements.txt`
 
 ### 安装步骤
 
-1. **克隆项目**
+**pip 安装**
 
 ```bash
-git clone https://github.com/JoeDod/nonebot-plugin-zzz-panel.git
-cd nonebot-plugin-zzz-panel
-```
-
-2. **安装依赖**
-
-```bash
-pip install -r requirements.txt
-```
-
-3. **安装 Playwright 浏览器**
-
-```bash
-playwright install
+pip install nonebot-plugin-zzz-avatar-panel
 ```
 
 ## 🚀 使用指南
