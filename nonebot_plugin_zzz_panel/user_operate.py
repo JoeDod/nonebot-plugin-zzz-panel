@@ -1,19 +1,10 @@
+from typing import Dict
 from playwright.async_api import async_playwright
 import asyncio
 from .utils import load_json_file, save_json_file, remove, process_avatar_images, render_html, html_render_image
 from .config import plugin_dir
 from pathlib import Path
 from .common import *
-
-file_locks = {}
-
-
-async def get_file_lock(file_path):
-    """获取文件路径对应的锁，如果不存在则创建一个新锁"""
-    file_path_str = str(file_path)
-    if file_path_str not in file_locks:
-        file_locks[file_path_str] = asyncio.Lock()
-    return file_locks[file_path_str]
 
 
 async def login_with_cache(
@@ -27,16 +18,11 @@ async def login_with_cache(
         browser = await p.chromium.launch(headless=headless)
         context = await browser.new_context()
         cookies_path = plugin_dir / "data" / user_id / "cookies.json"
-        lock = await get_file_lock(cookies_path)
-        await lock.acquire()
-        try:
-            cookies = load_json_file(cookies_path)
-        finally:
-            lock.release()
-        if cookies == {}:
-            await context.add_cookies([])
-        else:
+        cookies = load_json_file(cookies_path)
+
+        if cookies:
             await context.add_cookies(list(cookies))
+
         page = await context.new_page()
         if on_response:
             page.on("response", on_response(user_id))
@@ -69,14 +55,10 @@ async def login_with_cache(
                 )
             except Exception:
                 return False
-        # 保存该用户的cookies
-        lock = await get_file_lock(cookies_path)
-        await lock.acquire()
-        try:
-            cookies = await context.cookies()
-            save_json_file(cookies, cookies_path)
-        finally:
-            lock.release()
+
+        cookies = await context.cookies()
+        save_json_file(cookies, cookies_path)
+
         try:
             for _ in range(50):
                 await page.locator(
@@ -171,35 +153,44 @@ async def update_user_data(user_id, on_qr_code, login=True) -> bool:
 def create_response_handler(user_id):
 
     async def on_response(response):
+        # 处理 avatar_basic_list
         if "avatar_basic_list" in response.url and response.status == 200:
             file_path = plugin_dir / "data" / user_id / "avatar_basic_list.json"
-            file_lock = await get_file_lock(file_path)
-            await file_lock.acquire()
-            try:
-                save_json_file(await response.json(), file_path)
-            finally:
-                file_lock.release()
-        if "user/index?uid=" in response.url and response.status == 200:
-            save_json_file(await response.json(),
-                           plugin_dir / "data" / user_id / "user_info.json")
+            lock = get_id_lock(file_path)
 
+            async with lock:
+                save_json_file(await response.json(), file_path)
+            await safe_cleanup_lock(file_path)
+        # 处理 user_info
+        if "user/index?uid=" in response.url and response.status == 200:
+            file_path = plugin_dir / "data" / user_id / "user_info.json"
+            lock = get_id_lock(file_path)
+
+            async with lock:
+                save_json_file(await response.json(), file_path)
+            await safe_cleanup_lock(file_path)
+        # 处理 batch_avatar_detail_v2 - 这里需要特别注意，因为涉及读写操作
         if "batch_avatar_detail_v2" in response.url and response.status == 200:
             file_path = plugin_dir / "data" / user_id / "avatar_detail.json"
-            file_lock = await get_file_lock(file_path)
-            await file_lock.acquire()
-            try:
+            lock = get_id_lock(file_path)
+
+            async with lock:
+                # 在锁内完成所有读写操作
                 data = load_json_file(file_path)
                 data_list_map = {
                     avatar["avatar"]["id"]: avatar
                     for avatar in data.get("data", {}).get("list", [])
                 }
+
                 resp = await response.json()
                 resp_data_list = resp.get("data", {}).get("list", [])
                 new_data_list = {
                     avatar["avatar"]["id"]: avatar
                     for avatar in resp_data_list
                 }
+
                 if data_list_map:
+                    # 更新现有数据
                     for id, avatar in new_data_list.items():
                         data_list_map[id] = avatar
                     data["data"]["list"] = [
@@ -207,17 +198,17 @@ def create_response_handler(user_id):
                     ]
                     save_json_file(data, file_path)
                 else:
+                    # 保存新数据
                     save_json_file(resp, file_path)
-            finally:
-                file_lock.release()
+            await safe_cleanup_lock(file_path)
+        # 处理 icon_info - 公共数据，需要全局锁
         if "nap_cultivate_tool/user/icon_info?" in response.url and response.status == 200:
             file_path = plugin_dir / "data" / "common" / "icon_info.json"
-            file_lock = await get_file_lock(file_path)
-            await file_lock.acquire()
-            try:
+            lock = get_id_lock(str(file_path))
+
+            async with lock:
                 save_json_file(await response.json(), file_path)
-            finally:
-                file_lock.release()
+            await safe_cleanup_lock(str(file_path))
 
     return on_response
 

@@ -28,7 +28,6 @@ def save_json_file(data: Any, file_path: Union[str, Path]) -> None:
     file_path.parent.mkdir(parents=True, exist_ok=True)
     try:
         with file_path.open("w", encoding="utf-8") as f:
-            print("重写文件:", file_path)
             json.dump(data, f, ensure_ascii=False, indent=2)
     except Exception as e:
         raise RuntimeError(f"保存文件失败: {e}")
